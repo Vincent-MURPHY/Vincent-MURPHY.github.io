@@ -21,6 +21,8 @@
   <meta property="og:description"
         content="Expert informatique chez Orange. SI RH, intelligence artificielle agentique, intégration SI, API, IAM/SSO et cloud.">
   <meta property="og:url" content="https://vincent-murphy.github.io/">
+  <meta property="og:image"
+        content="https://vincent-murphy.github.io/vincent-murphy.jpg">
   <meta property="og:locale" content="fr_FR">
 
   <!-- Structured data -->
@@ -34,6 +36,7 @@
       "@type": "Person",
       "name": "Vincent MURPHY",
       "url": "https://vincent-murphy.github.io/",
+      "image": "https://vincent-murphy.github.io/vincent-murphy.jpg",
       "description": "Expert informatique spécialisé en systèmes d'information RH, intelligence artificielle agentique et intégration de systèmes.",
       "jobTitle": "Senior Expert SI RH / HR Information Systems",
       "worksFor": {
@@ -107,6 +110,26 @@
       padding: 32px 34px;
       margin-bottom: 45px;
       box-shadow: 0 3px 16px rgba(0,0,0,0.05);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .profile-photo {
+      width: 155px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+      flex-shrink: 0;
     }
 
     h1 {
@@ -228,6 +251,16 @@
         padding: 25px 22px;
       }
 
+      .header-content {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      .profile-photo {
+        width: 120px;
+        height: 155px;
+      }
+
       h1 {
         font-size: 2.35rem;
       }
@@ -244,24 +277,40 @@
 <div class="page">
 
   <header>
-    <h1>Vincent MURPHY</h1>
+    <div class="header-content">
 
-    <div class="headline">
-      Expert SI RH chez Orange · Intelligence artificielle agentique · Intégration SI
+      <div class="header-text">
+
+        <h1>Vincent MURPHY</h1>
+
+        <div class="headline">
+          Expert SI RH chez Orange · Intelligence artificielle agentique · Intégration SI
+        </div>
+
+        <div class="location">
+          Toulouse · Bois-de-la-Pierre · Occitanie · France
+        </div>
+
+        <nav>
+          <a href="#profil">Profil</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#parcours">Parcours</a>
+          <a href="#formation">Formation</a>
+          <a href="#innovation">Innovation &amp; R&amp;D</a>
+          <a href="#liens">Liens</a>
+        </nav>
+
+      </div>
+
+      <img
+        src="vincent-murphy.jpg"
+        alt="Vincent MURPHY"
+        class="profile-photo"
+        width="155"
+        height="200"
+      >
+
     </div>
-
-    <div class="location">
-      Toulouse · Bois-de-la-Pierre · Occitanie · France
-    </div>
-
-    <nav>
-      <a href="#profil">Profil</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#parcours">Parcours</a>
-      <a href="#formation">Formation</a>
-      <a href="#innovation">Innovation &amp; R&amp;D</a>
-      <a href="#liens">Liens</a>
-    </nav>
   </header>
 
 
@@ -346,6 +395,7 @@
       Conception et déploiement de réseaux radio et d'infrastructures
       réseau pour des organisations publiques et privées.
     </div>
+
   </section>
 
 
@@ -356,15 +406,16 @@
       <strong>University of Limerick · Ireland</strong>
       <span class="date">2000 – 2001</span>
       Master's Degree in Computer Engineering – Telecommunications Systems
-      <strong>Honours</strong>
+      <br><strong>Honours</strong>
     </div>
 
     <div class="timeline-item">
       <strong>University of Limerick · Ireland</strong>
       <span class="date">1995 – 2000</span>
       Bachelor's Degree in Science &amp; Technology Education
-      <strong>Honours</strong>
+      <br><strong>Honours</strong>
     </div>
+
   </section>
 
 
@@ -396,9 +447,10 @@
       <a href="https://worldwide.espacenet.com/"
          target="_blank"
          rel="noopener noreferrer">
-        Consulter Espacenet – European Patent Office
+        Consulter les brevets sur Espacenet – European Patent Office
       </a>
     </p>
+
   </section>
 
 
@@ -412,6 +464,7 @@
         Vincent MURPHY sur LinkedIn
       </a>
     </p>
+
   </section>
 
 
