@@ -4,36 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vincent MURPHY | Expert SI RH & Intelligence Artificielle | Toulouse</title>
+  <title>Vincent MURPHY | Expert SI RH, IA & Intégration | Orange · Toulouse</title>
 
-  <meta name="description" content="Vincent MURPHY, expert informatique chez Orange depuis plus de vingt ans, spécialisé en SI RH, intelligence artificielle agentique et intégration de systèmes. Région de Toulouse.">
+  <meta name="description"
+        content="Vincent MURPHY, expert informatique chez Orange dans la région de Toulouse. SI RH, intelligence artificielle agentique, intégration SI, API, IAM/SSO, cloud. Ancien ingénieur France Télécom R&D, diplômé de l'University of Limerick.">
 
   <meta name="author" content="Vincent MURPHY">
+  <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://vincent-murphy.github.io/">
 
-  <meta property="og:title" content="Vincent MURPHY | Expert SI RH & Intelligence Artificielle">
-  <meta property="og:description" content="Expert informatique chez Orange, spécialisé en SI RH, intelligence artificielle agentique et intégration de systèmes.">
+  <!-- Open Graph -->
   <meta property="og:type" content="profile">
+  <meta property="og:title"
+        content="Vincent MURPHY | Expert SI RH & Intelligence Artificielle">
+  <meta property="og:description"
+        content="Expert informatique chez Orange. SI RH, intelligence artificielle agentique, intégration SI, API, IAM/SSO et cloud.">
   <meta property="og:url" content="https://vincent-murphy.github.io/">
+  <meta property="og:locale" content="fr_FR">
 
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
+    "url": "https://vincent-murphy.github.io/",
+    "name": "Vincent MURPHY – Profil professionnel",
     "mainEntity": {
       "@type": "Person",
       "name": "Vincent MURPHY",
       "url": "https://vincent-murphy.github.io/",
-      "jobTitle": "Expert SI RH",
+      "description": "Expert informatique spécialisé en systèmes d'information RH, intelligence artificielle agentique et intégration de systèmes.",
+      "jobTitle": "Senior Expert SI RH / HR Information Systems",
       "worksFor": {
         "@type": "Organization",
-        "name": "Orange"
+        "name": "Orange",
+        "url": "https://www.orange.com/"
       },
       "alumniOf": {
         "@type": "CollegeOrUniversity",
-        "name": "University of Limerick"
+        "name": "University of Limerick",
+        "url": "https://www.ul.ie/"
       },
+      "knowsAbout": [
+        "Systèmes d'information RH",
+        "Intelligence artificielle agentique",
+        "Intégration de systèmes",
+        "API",
+        "IAM",
+        "Single Sign-On",
+        "Cloud",
+        "Cybersécurité",
+        "Télécommunications"
+      ],
       "homeLocation": {
         "@type": "Place",
         "name": "Bois-de-la-Pierre, Haute-Garonne, France"
@@ -46,89 +69,171 @@
   </script>
 
   <style>
+    :root {
+      --orange: #ff7900;
+      --text: #202020;
+      --muted: #666;
+      --light: #f6f6f6;
+      --border: #dedede;
+      --white: #ffffff;
+    }
+
     * {
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      background: #f7f7f7;
-      line-height: 1.6;
+    html {
+      scroll-behavior: smooth;
     }
 
-    main {
-      max-width: 900px;
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.65;
+    }
+
+    .page {
+      max-width: 960px;
       margin: 0 auto;
-      padding: 70px 30px;
+      padding: 70px 32px 50px;
     }
 
     header {
-      border-left: 6px solid #ff7900;
-      padding-left: 25px;
-      margin-bottom: 55px;
+      background: var(--white);
+      border-left: 7px solid var(--orange);
+      padding: 32px 34px;
+      margin-bottom: 45px;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.05);
     }
 
     h1 {
       margin: 0;
-      font-size: 3rem;
-      letter-spacing: -1px;
+      font-size: 3.2rem;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
     }
 
     .headline {
-      font-size: 1.25rem;
-      margin-top: 10px;
-      color: #555;
+      margin-top: 15px;
+      font-size: 1.28rem;
+      font-weight: 500;
     }
 
     .location {
-      color: #777;
-      margin-top: 5px;
+      margin-top: 7px;
+      color: var(--muted);
+    }
+
+    nav {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      font-size: 0.95rem;
     }
 
     section {
-      margin: 45px 0;
+      background: var(--white);
+      padding: 30px 34px;
+      margin: 22px 0;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.04);
     }
 
     h2 {
-      font-size: 1.35rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
+      margin-top: 0;
+      margin-bottom: 22px;
+      font-size: 1.4rem;
+      border-bottom: 2px solid var(--orange);
+      padding-bottom: 9px;
     }
 
-    .role {
-      margin-bottom: 25px;
+    p {
+      margin: 0 0 15px;
     }
 
-    .role strong {
+    .timeline-item {
+      margin: 0 0 25px;
+      padding-left: 18px;
+      border-left: 2px solid var(--border);
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item strong {
       display: block;
-      font-size: 1.05rem;
+      font-size: 1.06rem;
+    }
+
+    .date {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 2px 0 5px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .tag {
+      background: var(--light);
+      border: 1px solid var(--border);
+      padding: 6px 11px;
+      border-radius: 4px;
+      font-size: 0.92rem;
+    }
+
+    .highlight {
+      border-left: 4px solid var(--orange);
+      padding-left: 18px;
+      margin: 20px 0;
     }
 
     a {
-      color: #222;
+      color: var(--text);
       text-decoration: underline;
-      text-decoration-color: #ff7900;
+      text-decoration-color: var(--orange);
       text-decoration-thickness: 2px;
       text-underline-offset: 3px;
     }
 
-    footer {
-      margin-top: 70px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      color: #777;
-      font-size: 0.9rem;
+    a:hover {
+      color: #000;
     }
 
-    @media (max-width: 600px) {
-      main {
-        padding: 40px 22px;
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      padding: 35px 0 10px;
+    }
+
+    @media (max-width: 650px) {
+      .page {
+        padding: 30px 16px;
+      }
+
+      header,
+      section {
+        padding: 25px 22px;
       }
 
       h1 {
-        font-size: 2.2rem;
+        font-size: 2.35rem;
+      }
+
+      .headline {
+        font-size: 1.08rem;
       }
     }
   </style>
@@ -136,7 +241,7 @@
 
 <body>
 
-<main>
+<div class="page">
 
   <header>
     <h1>Vincent MURPHY</h1>
@@ -146,12 +251,22 @@
     </div>
 
     <div class="location">
-      Toulouse · Bois-de-la-Pierre, Occitanie, France
+      Toulouse · Bois-de-la-Pierre · Occitanie · France
     </div>
+
+    <nav>
+      <a href="#profil">Profil</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#formation">Formation</a>
+      <a href="#innovation">Innovation &amp; R&amp;D</a>
+      <a href="#liens">Liens</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>À propos</h2>
+
+  <section id="profil">
+    <h2>Profil</h2>
 
     <p>
       Expert informatique chez Orange depuis plus de vingt ans, je travaille
@@ -160,72 +275,151 @@
     </p>
 
     <p>
-      Basé dans la région toulousaine, j'interviens notamment sur les
-      problématiques d'intégration SI, API, IAM/SSO, cloud et interconnexion
-      de services.
-    </p>
-  </section>
-
-  <section>
-    <h2>Parcours</h2>
-
-    <div class="role">
-      <strong>Orange — Senior Expert SI RH / HR Information Systems</strong>
-      2015 – aujourd'hui · Toulouse / Blagnac
-    </div>
-
-    <div class="role">
-      <strong>Nordnet — Responsable de programme</strong>
-      2010 – 2012 · Lille
-    </div>
-
-    <div class="role">
-      <strong>France Télécom R&amp;D — Ingénieur recherche et développement principal</strong>
-      2004 – 2010 · Caen
-    </div>
-  </section>
-
-  <section>
-    <h2>Expertise</h2>
-
-    <p>
-      Intelligence artificielle agentique · SI RH · Intégration de systèmes ·
-      API · IAM/SSO · Cloud · Cybersécurité
-    </p>
-  </section>
-
-  <section>
-    <h2>Innovation &amp; brevets</h2>
-
-    <p>
-      Travaux de recherche, innovation et prototypage réalisés au sein de
-      France Télécom R&amp;D, ayant donné lieu à plusieurs inventions et
-      dépôts de brevets.
+      Basé dans la région toulousaine, mon parcours couvre les systèmes
+      d'information RH, l'intégration de solutions internes et SaaS,
+      les API, l'IAM/SSO, le cloud, la cybersécurité ainsi que
+      l'innovation et la R&amp;D dans les télécommunications.
     </p>
 
     <p>
-      <a href="https://worldwide.espacenet.com/" target="_blank" rel="noopener">
-        Rechercher les brevets sur Espacenet
+      Avant de rejoindre France Télécom en 2004, j'ai travaillé en Irlande
+      comme ingénieur indépendant dans les réseaux et télécommunications,
+      notamment sur le déploiement de réseaux radio.
+    </p>
+  </section>
+
+
+  <section id="expertise">
+    <h2>Domaines d'expertise</h2>
+
+    <div class="tags">
+      <span class="tag">Intelligence artificielle agentique</span>
+      <span class="tag">SI RH / HRIS</span>
+      <span class="tag">Intégration SI</span>
+      <span class="tag">API</span>
+      <span class="tag">IAM / SSO</span>
+      <span class="tag">Cloud</span>
+      <span class="tag">Cybersécurité</span>
+      <span class="tag">Architecture technique</span>
+      <span class="tag">Télécommunications</span>
+      <span class="tag">R&amp;D</span>
+    </div>
+  </section>
+
+
+  <section id="parcours">
+    <h2>Parcours professionnel</h2>
+
+    <div class="timeline-item">
+      <strong>Orange · DSI Corporate SI RH</strong>
+      <span class="date">2015 – aujourd'hui · Blagnac / Toulouse</span>
+      Expertise technique et conseil sur les systèmes d'information RH.
+      Intégration de solutions internes et SaaS, API, identité et accès,
+      cloud et cybersécurité. Travaux actuels autour de l'intégration
+      de l'intelligence artificielle agentique dans le SI RH.
+    </div>
+
+    <div class="timeline-item">
+      <strong>Orange Business Services</strong>
+      <span class="date">2011 – 2015 · Toulouse</span>
+      Pilotage de projets et d'applications IT, sécurité et coordination
+      d'équipes de développement.
+    </div>
+
+    <div class="timeline-item">
+      <strong>Nordnet · France Télécom</strong>
+      <span class="date">2010 – 2011 · Lille / Wasquehal</span>
+      Responsable de projets et de services numériques.
+    </div>
+
+    <div class="timeline-item">
+      <strong>France Télécom R&amp;D / Orange Labs</strong>
+      <span class="date">2004 – 2010 · Caen / Issy-les-Moulineaux</span>
+      Recherche, innovation et prototypage dans les télécommunications,
+      les services IP, les réseaux domestiques et les services multimédias.
+      Ingénieur R&amp;D puis responsable de projets d'innovation.
+    </div>
+
+    <div class="timeline-item">
+      <strong>Network &amp; Telecom Engineer</strong>
+      <span class="date">2002 – 2004 · Irlande</span>
+      Conception et déploiement de réseaux radio et d'infrastructures
+      réseau pour des organisations publiques et privées.
+    </div>
+  </section>
+
+
+  <section id="formation">
+    <h2>Formation</h2>
+
+    <div class="timeline-item">
+      <strong>University of Limerick · Ireland</strong>
+      <span class="date">2000 – 2001</span>
+      Master's Degree in Computer Engineering – Telecommunications Systems
+      <strong>Honours</strong>
+    </div>
+
+    <div class="timeline-item">
+      <strong>University of Limerick · Ireland</strong>
+      <span class="date">1995 – 2000</span>
+      Bachelor's Degree in Science &amp; Technology Education
+      <strong>Honours</strong>
+    </div>
+  </section>
+
+
+  <section id="innovation">
+    <h2>Innovation &amp; R&amp;D</h2>
+
+    <div class="highlight">
+      <strong>14 brevets / publications internationales</strong>
+      <p>
+        Travaux d'invention réalisés dans le cadre de France Télécom
+        R&amp;D / Orange Labs.
+      </p>
+    </div>
+
+    <p>
+      Nomination à l'Orange Innovation Award en 2008.
+    </p>
+
+    <p>
+      Présentation de la Livebox v2 et du Universal Decoder lors
+      d'Orange Collections 2009.
+    </p>
+
+    <p>
+      Présentateur au Broadband World Forum 2009.
+    </p>
+
+    <p>
+      <a href="https://worldwide.espacenet.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Consulter Espacenet – European Patent Office
       </a>
     </p>
   </section>
 
-  <section>
-    <h2>Liens</h2>
+
+  <section id="liens">
+    <h2>Liens professionnels</h2>
 
     <p>
       <a href="https://www.linkedin.com/in/vincent-murphy-orange/"
-         target="_blank" rel="noopener">
-        LinkedIn
+         target="_blank"
+         rel="me noopener noreferrer">
+        Vincent MURPHY sur LinkedIn
       </a>
     </p>
   </section>
 
+
   <footer>
-    Vincent MURPHY · Toulouse · France
+    © 2026 Vincent MURPHY · Toulouse · France
   </footer>
 
-</main>
+</div>
 
 </body>
 </html>
