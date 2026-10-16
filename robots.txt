@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://vincent-murphy.github.io/sitemap.xml
