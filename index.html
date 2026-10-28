@@ -42,7 +42,7 @@
     html { scroll-behavior:smooth; }
     body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,Helvetica,sans-serif; color:var(--text); background:var(--light); line-height:1.65; }
     .page { max-width:960px; margin:0 auto; padding:70px 32px 50px; }
-    header { background:var(--white); border-left:7px solid var(--orange); padding:32px 34px; margin-bottom:45px; box-shadow:0 3px 16px rgba(0,0,0,.05); position:relative; }
+    header { background:var(--white); border-left:7px solid var(--orange); padding:20px 34px 32px; margin-bottom:45px; box-shadow:0 3px 16px rgba(0,0,0,.05); }
     .header-content { display:flex; align-items:center; justify-content:space-between; gap:35px; }
     .header-text { flex:1; }
     .profile-photo { width:155px; height:200px; object-fit:cover; object-position:center; border-radius:8px; flex-shrink:0; }
@@ -65,7 +65,7 @@
     a { color:var(--text); text-decoration:underline; text-decoration-color:var(--orange); text-decoration-thickness:2px; text-underline-offset:3px; }
     a:hover { color:#000; }
     footer { text-align:center; color:var(--muted); font-size:.88rem; padding:35px 0 10px; }
-    .language-switch { position:absolute; top:13px; right:17px; display:flex; gap:5px; align-items:center; }
+    .language-switch { display:flex; justify-content:flex-end; gap:5px; align-items:center; margin-bottom:14px; }
     .language-switch button { border:1px solid transparent; background:transparent; border-radius:7px; padding:4px 7px; cursor:pointer; font:600 .82rem/1.5 inherit; color:var(--muted); display:flex; align-items:center; gap:5px; }
     .language-switch button:hover { background:var(--light); }
     .language-switch button[aria-pressed="true"] { border-color:var(--orange); background:#fff5eb; color:var(--text); }
@@ -74,7 +74,7 @@
     @media (max-width:650px) {
       .page { padding:30px 16px; }
       header,section { padding:25px 22px; }
-      header { padding-top:54px; }
+      header { padding-top:16px; }
       .header-content { flex-direction:column-reverse; align-items:flex-start; }
       .profile-photo { width:120px; height:155px; }
       h1 { font-size:2.35rem; }
